@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/et_student_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter Student Name"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:id="@+id/et_student_rollno"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter Student Roll number"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/et_student_dept"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter Student Department"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/et_student_book"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter Book Borrowed"
+        android:inputType="text" />
+
+
+    <Button
+        android:id="@+id/btn_enter_registry"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:text="Enter Registry" />
+
+
+    <Button
+        android:id="@+id/btn_update_registry"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        android:text="Update Registry" />
+
+    <Button
+        android:id="@+id/btn_get_values"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="View Data" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_studentlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
